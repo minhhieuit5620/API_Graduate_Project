@@ -6,8 +6,7 @@ using System.Collections.Generic;
 namespace IS.Model.Manager
 {
     public class TblNhomCauHoi
-    {
-     
+    {     
         public int MaNhomCauHoi { get; set; }
         public string TenNhomCauHoi { get; set; }
         public int? MaTieuChiCha { get; set; }
@@ -15,7 +14,6 @@ namespace IS.Model.Manager
         public string NguoiThem { get; set; }
         public DateTime? NgayThem { get; set; }
         public string NguoiSua { get; set; }
-        public DateTime? NgaySua { get; set; }
-       
+        public DateTime? NgaySua { get; set; }       
     }
 }

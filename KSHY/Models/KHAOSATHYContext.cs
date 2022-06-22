@@ -427,10 +427,10 @@ namespace KSHY.Models
 
                 entity.Property(e => e.TrangThai).HasMaxLength(50);
 
-                entity.HasOne(d => d.RolNavigation)
-                    .WithMany(p => p.TblAdmins)
-                    .HasForeignKey(d => d.Rol)
-                    .HasConstraintName("FK_tblAdmin_tblPhanQuyen");
+                //entity.HasOne(d => d.RolNavigation)
+                //    .WithMany(p => p.TblAdmins)
+                //    .HasForeignKey(d => d.Rol)
+                //    .HasConstraintName("FK_tblAdmin_tblPhanQuyen");
             });
 
             modelBuilder.Entity<TblCauHoi>(entity =>
@@ -449,15 +449,15 @@ namespace KSHY.Models
 
                 entity.Property(e => e.NguoiThem).HasMaxLength(100);
 
-                entity.HasOne(d => d.MaLoaiCauHoiNavigation)
-                    .WithMany(p => p.TblCauHois)
-                    .HasForeignKey(d => d.MaLoaiCauHoi)
-                    .HasConstraintName("FK_tblCauHoi_tblLoaiCauHoi");
+                //entity.HasOne(d => d.MaLoaiCauHoiNavigation)
+                //    .WithMany(p => p.TblCauHois)
+                //    .HasForeignKey(d => d.MaLoaiCauHoi)
+                //    .HasConstraintName("FK_tblCauHoi_tblLoaiCauHoi");
 
-                entity.HasOne(d => d.MaNhomCauHoiNavigation)
-                    .WithMany(p => p.TblCauHois)
-                    .HasForeignKey(d => d.MaNhomCauHoi)
-                    .HasConstraintName("FK_tblCauHoi_tblNhomCauHoi");
+                //entity.HasOne(d => d.MaNhomCauHoiNavigation)
+                //    .WithMany(p => p.TblCauHois)
+                //    .HasForeignKey(d => d.MaNhomCauHoi)
+                //    .HasConstraintName("FK_tblCauHoi_tblNhomCauHoi");
             });
 
             modelBuilder.Entity<TblChiTietKhaoSat>(entity =>
@@ -466,21 +466,24 @@ namespace KSHY.Models
 
                 entity.ToTable("tblChiTietKhaoSat");
 
-                entity.Property(e => e.MaChiTietKhaoSat).ValueGeneratedNever();
-
                 entity.Property(e => e.GiaTriNhap).HasMaxLength(250);
 
                 entity.Property(e => e.ThoiGianTraLoi).HasColumnType("date");
 
-                entity.HasOne(d => d.MaCauHoiNavigation)
-                    .WithMany(p => p.TblChiTietKhaoSats)
-                    .HasForeignKey(d => d.MaCauHoi)
-                    .HasConstraintName("FK_tblChiTietKhaoSat_tblCauHoi");
+                //entity.HasOne(d => d.MaCauHoiNavigation)
+                //    .WithMany(p => p.TblChiTietKhaoSats)
+                //    .HasForeignKey(d => d.MaCauHoi)
+                //    .HasConstraintName("FK_tblChiTietKhaoSat_tblCauHoi");
 
-                entity.HasOne(d => d.MaKhaoSatNavigation)
-                    .WithMany(p => p.TblChiTietKhaoSats)
-                    .HasForeignKey(d => d.MaKhaoSat)
-                    .HasConstraintName("FK_tblChiTietKhaoSat_tblKhaoSat");
+                //entity.HasOne(d => d.MaKhaoSatNavigation)
+                //    .WithMany(p => p.TblChiTietKhaoSats)
+                //    .HasForeignKey(d => d.MaKhaoSat)
+                //    .HasConstraintName("FK_tblChiTietKhaoSat_tblKhaoSat");
+
+                //entity.HasOne(d => d.MaLuaChonNavigation)
+                //    .WithMany(p => p.TblChiTietKhaoSats)
+                //    .HasForeignKey(d => d.MaLuaChon)
+                //    .HasConstraintName("FK_tblChiTietKhaoSat_tblLuaChon");
             });
 
             modelBuilder.Entity<TblDoanhNghiep>(entity =>
@@ -490,15 +493,15 @@ namespace KSHY.Models
 
                 entity.ToTable("tblDoanhNghiep");
 
-                entity.Property(e => e.MaDoanhNghiep).ValueGeneratedNever();
-
                 entity.Property(e => e.DiaChi).HasMaxLength(500);
 
                 entity.Property(e => e.DienThoai).HasMaxLength(20);
 
-                entity.Property(e => e.DistrictsRcd).HasColumnName("districts_rcd");
-
                 entity.Property(e => e.Email).HasMaxLength(100);
+
+                entity.Property(e => e.MaDinhDanhDn).HasColumnName("MaDinhDanhDN");
+
+                entity.Property(e => e.MatKhau).HasMaxLength(100);
 
                 entity.Property(e => e.MoTa).HasMaxLength(500);
 
@@ -506,15 +509,15 @@ namespace KSHY.Models
 
                 entity.Property(e => e.NgayTao).HasColumnType("datetime");
 
-                entity.Property(e => e.NguoiDungDau).HasMaxLength(100);
+                entity.Property(e => e.NguoiKhaoSat).HasMaxLength(100);
 
                 entity.Property(e => e.NguoiSua).HasMaxLength(100);
 
                 entity.Property(e => e.NguoiTao).HasMaxLength(100);
 
-                entity.Property(e => e.ProvincesRcd).HasColumnName("provinces_rcd");
-
                 entity.Property(e => e.QuyMo).HasMaxLength(50);
+
+                entity.Property(e => e.TaiKhoan).HasMaxLength(50);
 
                 entity.Property(e => e.TenToChuc).HasMaxLength(250);
 
@@ -522,19 +525,22 @@ namespace KSHY.Models
 
                 entity.Property(e => e.TinhThanh).HasMaxLength(250);
 
-                entity.Property(e => e.WardsRcd).HasColumnName("wards_rcd");
-
                 entity.Property(e => e.Website).HasMaxLength(50);
 
-                entity.HasOne(d => d.MaLoaiHinhNavigation)
-                    .WithMany(p => p.TblDoanhNghieps)
-                    .HasForeignKey(d => d.MaLoaiHinh)
-                    .HasConstraintName("FK_tblDoanhNghiep_tblLoaiHinhDN");
+                //entity.HasOne(d => d.MaLoaiHinhNavigation)
+                //    .WithMany(p => p.TblDoanhNghieps)
+                //    .HasForeignKey(d => d.MaLoaiHinh)
+                //    .HasConstraintName("FK_tblDoanhNghiep_tblLoaiHinhDN");
 
-                entity.HasOne(d => d.MaNganhNavigation)
-                    .WithMany(p => p.TblDoanhNghieps)
-                    .HasForeignKey(d => d.MaNganh)
-                    .HasConstraintName("FK_tblDoanhNghiep_tblNganhKD");
+                //entity.HasOne(d => d.MaNganhNavigation)
+                //    .WithMany(p => p.TblDoanhNghieps)
+                //    .HasForeignKey(d => d.MaNganh)
+                //    .HasConstraintName("FK_tblDoanhNghiep_tblNganhKD");
+
+                //entity.HasOne(d => d.RolNavigation)
+                //    .WithMany(p => p.TblDoanhNghieps)
+                //    .HasForeignKey(d => d.Rol)
+                //    .HasConstraintName("FK_tblDoanhNghiep_tblPhanQuyen");
             });
 
             modelBuilder.Entity<TblDotKhaoSat>(entity =>
@@ -542,8 +548,6 @@ namespace KSHY.Models
                 entity.HasKey(e => e.MaDotKhaoSat);
 
                 entity.ToTable("tblDotKhaoSat");
-
-                entity.Property(e => e.MaDotKhaoSat).ValueGeneratedNever();
 
                 entity.Property(e => e.FileBaoCaoKetQua)
                     .HasMaxLength(50)
@@ -589,19 +593,17 @@ namespace KSHY.Models
 
                 entity.Property(e => e.NgaySua).HasColumnType("datetime");
 
-                entity.Property(e => e.NguoiDanhGia).HasMaxLength(100);
-
                 entity.Property(e => e.NguoiSua).HasMaxLength(100);
 
-                entity.HasOne(d => d.MaDoanhNghiepNavigation)
-                    .WithMany(p => p.TblKhaoSats)
-                    .HasForeignKey(d => d.MaDoanhNghiep)
-                    .HasConstraintName("FK_tblKhaoSat_tblDoanhNghiep");
+                //entity.HasOne(d => d.MaDoanhNghiepNavigation)
+                //    .WithMany(p => p.TblKhaoSats)
+                //    .HasForeignKey(d => d.MaDoanhNghiep)
+                //    .HasConstraintName("FK_tblKhaoSat_tblDoanhNghiep");
 
-                entity.HasOne(d => d.MaDotKhaoSatNavigation)
-                    .WithMany(p => p.TblKhaoSats)
-                    .HasForeignKey(d => d.MaDotKhaoSat)
-                    .HasConstraintName("FK_tblKhaoSat_tblDotKhaoSat");
+                //entity.HasOne(d => d.MaDotKhaoSatNavigation)
+                //    .WithMany(p => p.TblKhaoSats)
+                //    .HasForeignKey(d => d.MaDotKhaoSat)
+                //    .HasConstraintName("FK_tblKhaoSat_tblDotKhaoSat");
             });
 
             modelBuilder.Entity<TblLoaiCauHoi>(entity =>
@@ -645,12 +647,10 @@ namespace KSHY.Models
 
                 entity.ToTable("tblLuaChon");
 
-                entity.Property(e => e.NoiDung).HasMaxLength(50);
-
-                entity.HasOne(d => d.MaCauHoiNavigation)
-                    .WithMany(p => p.TblLuaChons)
-                    .HasForeignKey(d => d.MaCauHoi)
-                    .HasConstraintName("FK_tblLuaChon_tblCauHoi");
+                //entity.HasOne(d => d.MaCauHoiNavigation)
+                //    .WithMany(p => p.TblLuaChons)
+                //    .HasForeignKey(d => d.MaCauHoi)
+                //    .HasConstraintName("FK_tblLuaChon_tblCauHoi");
             });
 
             modelBuilder.Entity<TblNganhKd>(entity =>
@@ -723,17 +723,6 @@ namespace KSHY.Models
                 entity.Property(e => e.NguoiTao).HasMaxLength(100);
 
                 entity.Property(e => e.TaiKhoan).HasMaxLength(30);
-
-                entity.HasOne(d => d.MaToChucNavigation)
-                    .WithMany(p => p.TblTaiKhoanDns)
-                    .HasForeignKey(d => d.MaToChuc)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("FK_tblTaiKhoanDN_tblDoanhNghiep");
-
-                entity.HasOne(d => d.RolNavigation)
-                    .WithMany(p => p.TblTaiKhoanDns)
-                    .HasForeignKey(d => d.Rol)
-                    .HasConstraintName("FK_tblTaiKhoanDN_tblPhanQuyen");
             });
 
             modelBuilder.Entity<TblTinTuc>(entity =>
@@ -750,7 +739,7 @@ namespace KSHY.Models
 
                 entity.Property(e => e.NguoiThem).HasMaxLength(100);
 
-                entity.Property(e => e.TieuDe).HasMaxLength(100);
+                entity.Property(e => e.TieuDe).HasMaxLength(500);
             });
 
             modelBuilder.Entity<TblTinTucLoai>(entity =>
@@ -776,16 +765,6 @@ namespace KSHY.Models
                 entity.ToTable("tblTraLoiLuaChon");
 
                 entity.Property(e => e.MaTraLoiDaLuaChon).ValueGeneratedNever();
-
-                entity.HasOne(d => d.MaChiTietKhaoSatNavigation)
-                    .WithMany(p => p.TblTraLoiLuaChons)
-                    .HasForeignKey(d => d.MaChiTietKhaoSat)
-                    .HasConstraintName("FK_tblTraLoiLuaChon_tblChiTietKhaoSat");
-
-                entity.HasOne(d => d.MaLuaChonNavigation)
-                    .WithMany(p => p.TblTraLoiLuaChons)
-                    .HasForeignKey(d => d.MaLuaChon)
-                    .HasConstraintName("FK_tblTraLoiLuaChon_tblLuaChon");
             });
 
             OnModelCreatingPartial(modelBuilder);

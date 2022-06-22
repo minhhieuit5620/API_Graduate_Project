@@ -10,3 +10,15 @@ C:\Users\MinhHieuDev\Desktop\Project_KSKHCN\KSHY\KSHY.Common\bin\Debug\net5.0\KS
 C:\Users\MinhHieuDev\Desktop\Project_KSKHCN\KSHY\KSHY.Common\obj\Debug\net5.0\KSHY.Common.dll
 C:\Users\MinhHieuDev\Desktop\Project_KSKHCN\KSHY\KSHY.Common\obj\Debug\net5.0\ref\KSHY.Common.dll
 C:\Users\MinhHieuDev\Desktop\Project_KSKHCN\KSHY\KSHY.Common\obj\Debug\net5.0\KSHY.Common.pdb
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\KSHY.Common\bin\Debug\net5.0\KSHY.Common.deps.json
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\KSHY.Common\bin\Debug\net5.0\KSHY.Common.dll
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\KSHY.Common\bin\Debug\net5.0\ref\KSHY.Common.dll
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\KSHY.Common\bin\Debug\net5.0\KSHY.Common.pdb
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\KSHY.Common\obj\Debug\net5.0\KSHY.Common.csproj.AssemblyReference.cache
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\KSHY.Common\obj\Debug\net5.0\KSHY.Common.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\KSHY.Common\obj\Debug\net5.0\KSHY.Common.AssemblyInfoInputs.cache
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\KSHY.Common\obj\Debug\net5.0\KSHY.Common.AssemblyInfo.cs
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\KSHY.Common\obj\Debug\net5.0\KSHY.Common.csproj.CoreCompileInputs.cache
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\KSHY.Common\obj\Debug\net5.0\KSHY.Common.dll
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\KSHY.Common\obj\Debug\net5.0\ref\KSHY.Common.dll
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\KSHY.Common\obj\Debug\net5.0\KSHY.Common.pdb

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Yo12WnFv0KR8ATZi63qYcahn0+8pq7NPPvTvzXOXmiuTGpBIYwEEaKrz6oa2ZLNZdZAp0u7KK6cei23BgsL46w==",
+  "dgSpecHash": "kXSZtQ3WhyFXdl7NB7d2EqdpVrLRYalkjh+bo8h7Ynp5aFoQMFkMb+x/A8LdwTE99nzwkSoBRUljK12zYzN7TQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\IS.Model\\IS.Model.csproj",
+  "projectFilePath": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\IS.Model\\IS.Model.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MinhHieuDev\\.nuget\\packages\\system.linq.dynamic\\1.0.8\\system.linq.dynamic.1.0.8.nupkg.sha512"
   ],

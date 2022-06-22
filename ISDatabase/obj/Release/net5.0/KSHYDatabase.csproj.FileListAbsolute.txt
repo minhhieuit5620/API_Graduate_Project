@@ -1,0 +1,12 @@
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\ISDatabase\bin\Release\net5.0\KSHYDatabase.deps.json
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\ISDatabase\bin\Release\net5.0\KSHYDatabase.dll
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\ISDatabase\bin\Release\net5.0\ref\KSHYDatabase.dll
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\ISDatabase\bin\Release\net5.0\KSHYDatabase.pdb
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\ISDatabase\obj\Release\net5.0\KSHYDatabase.csproj.AssemblyReference.cache
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\ISDatabase\obj\Release\net5.0\KSHYDatabase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\ISDatabase\obj\Release\net5.0\KSHYDatabase.AssemblyInfoInputs.cache
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\ISDatabase\obj\Release\net5.0\KSHYDatabase.AssemblyInfo.cs
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\ISDatabase\obj\Release\net5.0\KSHYDatabase.csproj.CoreCompileInputs.cache
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\ISDatabase\obj\Release\net5.0\KSHYDatabase.dll
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\ISDatabase\obj\Release\net5.0\ref\KSHYDatabase.dll
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\ISDatabase\obj\Release\net5.0\KSHYDatabase.pdb

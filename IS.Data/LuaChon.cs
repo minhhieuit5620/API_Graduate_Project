@@ -28,6 +28,7 @@ namespace IS.Data
             //{
             //    advanceSearch = LinqExpressions.ConvertFilterToString<NhomCauHoiModel>(model.Data.Filter.filters);
             //}
+           
             var search = "";
             List<IDbDataParameter> parameters = new List<IDbDataParameter>
                 {
@@ -113,7 +114,7 @@ namespace IS.Data
 
         #region Xóa dữ liệu
 
-        public async Task<int> DeleteCauHoi(int Id)
+        public async Task<int> DeleteLuaChonByMaCauHoi(int Id)
         {
             var parameters = new List<IDbDataParameter>
                 {
@@ -122,7 +123,7 @@ namespace IS.Data
                     _context.CreateOutParameter("OUT_ERR_MSG", DbType.String, 255)
                 };
 
-            var result = await Task.FromResult(_context.CallToValue("CH_CauHoi_Delete", parameters));
+            var result = await Task.FromResult(_context.CallToValue("CH_DeleteLuaChon_byMaCauHoi", parameters));
             return result.ErrorCode == 0 && string.IsNullOrEmpty(result.ErrorMessage) ? Constant.ReturnExcuteFunction.Success : Constant.ReturnExcuteFunction.Error;
         }
 

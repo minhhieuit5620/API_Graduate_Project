@@ -100,11 +100,11 @@ namespace KSHY.Controllers.Manager
 
 
         #region Xóa dữ liệu
-        [HttpPost, Route("/api/LuaChon/Delete_CauHoi/{id}")]
-        public async Task<ActionResult<LuaChonModelParameter>> DeleteCauHoi(int id)
+        [HttpPost, Route("/api/LuaChon/Delete_LuaChonByMaCauHoi/{id}")]
+        public async Task<ActionResult<LuaChonModelParameter>> DeleteLuaChon(int id)
         {
             _context = new LuaChon(ConnectString);
-            var tblCauHoi = await _context.DeleteCauHoi(id);
+            var tblCauHoi = await _context.DeleteLuaChonByMaCauHoi(id);
             return Ok(tblCauHoi);
         }
         #endregion

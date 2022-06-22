@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\KSHY\\KSHY.csproj": {}
+    "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\KSHY\\KSHY.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\IS.Data\\IS.Data.csproj": {
+    "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\IS.Data\\IS.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\IS.Data\\IS.Data.csproj",
+        "projectUniqueName": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\IS.Data\\IS.Data.csproj",
         "projectName": "IS.Data",
-        "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\IS.Data\\IS.Data.csproj",
+        "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\IS.Data\\IS.Data.csproj",
         "packagesPath": "C:\\Users\\MinhHieuDev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\IS.Data\\obj\\",
+        "outputPath": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\IS.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,14 +32,14 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\IS.Model\\IS.Model.csproj": {
-                "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\IS.Model\\IS.Model.csproj"
+              "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\IS.Model\\IS.Model.csproj": {
+                "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\IS.Model\\IS.Model.csproj"
               },
-              "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\ISDatabase\\KSHYDatabase.csproj": {
-                "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\ISDatabase\\KSHYDatabase.csproj"
+              "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\ISDatabase\\KSHYDatabase.csproj": {
+                "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\ISDatabase\\KSHYDatabase.csproj"
               },
-              "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\KSHY.Common\\KSHY.Common.csproj": {
-                "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\KSHY.Common\\KSHY.Common.csproj"
+              "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\KSHY.Common\\KSHY.Common.csproj": {
+                "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\KSHY.Common\\KSHY.Common.csproj"
               }
             }
           }
@@ -72,14 +72,14 @@
         }
       }
     },
-    "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\IS.Model\\IS.Model.csproj": {
+    "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\IS.Model\\IS.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\IS.Model\\IS.Model.csproj",
+        "projectUniqueName": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\IS.Model\\IS.Model.csproj",
         "projectName": "IS.Model",
-        "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\IS.Model\\IS.Model.csproj",
+        "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\IS.Model\\IS.Model.csproj",
         "packagesPath": "C:\\Users\\MinhHieuDev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\IS.Model\\obj\\",
+        "outputPath": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\IS.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -100,8 +100,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\KSHY.Common\\KSHY.Common.csproj": {
-                "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\KSHY.Common\\KSHY.Common.csproj"
+              "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\KSHY.Common\\KSHY.Common.csproj": {
+                "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\KSHY.Common\\KSHY.Common.csproj"
               }
             }
           }
@@ -134,14 +134,14 @@
         }
       }
     },
-    "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\ISDatabase\\KSHYDatabase.csproj": {
+    "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\ISDatabase\\KSHYDatabase.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\ISDatabase\\KSHYDatabase.csproj",
+        "projectUniqueName": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\ISDatabase\\KSHYDatabase.csproj",
         "projectName": "KSHYDatabase",
-        "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\ISDatabase\\KSHYDatabase.csproj",
+        "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\ISDatabase\\KSHYDatabase.csproj",
         "packagesPath": "C:\\Users\\MinhHieuDev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\ISDatabase\\obj\\",
+        "outputPath": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\ISDatabase\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -214,14 +214,14 @@
         }
       }
     },
-    "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\KSHY.Common\\KSHY.Common.csproj": {
+    "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\KSHY.Common\\KSHY.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\KSHY.Common\\KSHY.Common.csproj",
+        "projectUniqueName": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\KSHY.Common\\KSHY.Common.csproj",
         "projectName": "KSHY.Common",
-        "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\KSHY.Common\\KSHY.Common.csproj",
+        "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\KSHY.Common\\KSHY.Common.csproj",
         "packagesPath": "C:\\Users\\MinhHieuDev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\KSHY.Common\\obj\\",
+        "outputPath": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\KSHY.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -278,14 +278,14 @@
         }
       }
     },
-    "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\KSHYWeb\\KSHYWeb.csproj": {
+    "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\KSHYWeb\\KSHYWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\KSHYWeb\\KSHYWeb.csproj",
+        "projectUniqueName": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\KSHYWeb\\KSHYWeb.csproj",
         "projectName": "KSHYWeb",
-        "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\KSHYWeb\\KSHYWeb.csproj",
+        "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\KSHYWeb\\KSHYWeb.csproj",
         "packagesPath": "C:\\Users\\MinhHieuDev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\KSHYWeb\\obj\\",
+        "outputPath": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\KSHYWeb\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -306,8 +306,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\KSHY.Common\\KSHY.Common.csproj": {
-                "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\KSHY.Common\\KSHY.Common.csproj"
+              "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\KSHY.Common\\KSHY.Common.csproj": {
+                "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\KSHY.Common\\KSHY.Common.csproj"
               }
             }
           }
@@ -382,14 +382,14 @@
         }
       }
     },
-    "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\KSHY\\KSHY.csproj": {
+    "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\KSHY\\KSHY.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\KSHY\\KSHY.csproj",
+        "projectUniqueName": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\KSHY\\KSHY.csproj",
         "projectName": "KSHY",
-        "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\KSHY\\KSHY.csproj",
+        "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\KSHY\\KSHY.csproj",
         "packagesPath": "C:\\Users\\MinhHieuDev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\KSHY\\obj\\",
+        "outputPath": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\KSHY\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -410,17 +410,17 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\IS.Data\\IS.Data.csproj": {
-                "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\IS.Data\\IS.Data.csproj"
+              "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\IS.Data\\IS.Data.csproj": {
+                "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\IS.Data\\IS.Data.csproj"
               },
-              "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\IS.Model\\IS.Model.csproj": {
-                "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\IS.Model\\IS.Model.csproj"
+              "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\IS.Model\\IS.Model.csproj": {
+                "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\IS.Model\\IS.Model.csproj"
               },
-              "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\KSHY.Common\\KSHY.Common.csproj": {
-                "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\KSHY.Common\\KSHY.Common.csproj"
+              "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\KSHY.Common\\KSHY.Common.csproj": {
+                "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\KSHY.Common\\KSHY.Common.csproj"
               },
-              "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\KSHYWeb\\KSHYWeb.csproj": {
-                "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\KSHYWeb\\KSHYWeb.csproj"
+              "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\KSHYWeb\\KSHYWeb.csproj": {
+                "projectPath": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\KSHYWeb\\KSHYWeb.csproj"
               }
             }
           }
@@ -435,6 +435,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -451,13 +455,41 @@
               "target": "Package",
               "version": "[5.0.16, )"
             },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.18.0, )"
+            },
+            "Microsoft.Owin.Cors": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "Microsoft.Owin.Host.SystemWeb": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
+            "Microsoft.Owin.Security.OAuth": {
+              "target": "Package",
+              "version": "[4.2.2, )"
+            },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[5.0.2, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "Owin": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.18.0, )"
             }
           },
           "imports": [

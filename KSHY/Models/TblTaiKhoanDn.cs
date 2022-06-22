@@ -17,8 +17,5 @@ namespace KSHY.Models
         public string NguoiTao { get; set; }
         public string NguoiSua { get; set; }
         public DateTime? NgaySua { get; set; }
-
-        public virtual TblDoanhNghiep MaToChucNavigation { get; set; }
-        public virtual TblPhanQuyen RolNavigation { get; set; }
     }
 }

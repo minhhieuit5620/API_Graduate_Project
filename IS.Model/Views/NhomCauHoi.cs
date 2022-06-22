@@ -23,6 +23,7 @@ namespace IS.Model.Views
     {
         public List<NhomCauHoiModel> Data { get; set; }
         public int TotalRecord { get; set; }
+        public int pages { get; set; }
     }
     public class NhomCauHoiModelParameter
     {

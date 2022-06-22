@@ -13,6 +13,7 @@ namespace IS.Model.Views
     {
         public List<CauHoiModel> Data { get; set; }
         public int TotalRecord { get; set; }
+        public int pages { get; set; }
     }
     public class CauHoiModelParameter
     {

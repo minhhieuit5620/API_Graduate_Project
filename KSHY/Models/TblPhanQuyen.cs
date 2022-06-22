@@ -7,11 +7,11 @@ namespace KSHY.Models
 {
     public partial class TblPhanQuyen
     {
-        public TblPhanQuyen()
-        {
-            TblAdmins = new HashSet<TblAdmin>();
-            TblTaiKhoanDns = new HashSet<TblTaiKhoanDn>();
-        }
+        //public TblPhanQuyen()
+        //{
+        //    TblAdmins = new HashSet<TblAdmin>();
+        //    TblDoanhNghieps = new HashSet<TblDoanhNghiep>();
+        //}
 
         public int MaQuyen { get; set; }
         public string ChucVu { get; set; }
@@ -22,7 +22,7 @@ namespace KSHY.Models
         public string NguoiSua { get; set; }
         public DateTime? NgaySua { get; set; }
 
-        public virtual ICollection<TblAdmin> TblAdmins { get; set; }
-        public virtual ICollection<TblTaiKhoanDn> TblTaiKhoanDns { get; set; }
+        //public virtual ICollection<TblAdmin> TblAdmins { get; set; }
+        //public virtual ICollection<TblDoanhNghiep> TblDoanhNghieps { get; set; }
     }
 }

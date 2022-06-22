@@ -23,11 +23,7 @@ namespace IS.Data
         public async Task<NhomCauHoiReturnModel> GetAllNhomCauHoi(NhomCauHoiModelParameter model)
         {
             IEnumerable<NhomCauHoiModel> resultModel;
-            //var advanceSearch = "";
-            //if (model.Data.Filter != null && model.Data.Filter.filters != null)
-            //{
-            //    advanceSearch = LinqExpressions.ConvertFilterToString<NhomCauHoiModel>(model.Data.Filter.filters);
-            //}
+           
             var search = "";
             List<IDbDataParameter> parameters = new List<IDbDataParameter>
                 {
@@ -47,6 +43,55 @@ namespace IS.Data
             if (result.Output["OUT_TOTAL_ROW"] + "" != "")
                 rs.TotalRecord = Convert.ToInt32(result.Output["OUT_TOTAL_ROW"]);
             rs.Data = resultModel.ToList();
+            if (rs.TotalRecord %10>0)
+            {
+                rs.pages = rs.TotalRecord / 10 + 1;
+            }
+            else
+            {
+                rs.pages = rs.TotalRecord / 10;
+            }
+            return rs;
+        }
+
+
+        public async Task<NhomCauHoiReturnModel> SearchNhomCauHoi(NhomCauHoiModelParameter model,string search)
+        {
+            IEnumerable<NhomCauHoiModel> resultModel;
+            var tmp = "";
+           
+            if(search==null)
+            {
+                 tmp = search;
+
+            }
+            List<IDbDataParameter> parameters = new List<IDbDataParameter>
+                {
+                
+                _context.CreateInParameter("IN_SEARCH_KEYWORD", DbType.String,tmp ),
+                _context.CreateInParameter("IN_ACTIVE", DbType.Int32,model.Data.TrangThai),
+                _context.CreateInParameter("IN_PAGE", DbType.Int32, model.Page?.PageIndex??Constant.DefaultPage.PageIndex),
+                _context.CreateInParameter("IN_PAGE_SIZE", DbType.Int32, model.Page?.PageSize??Constant.DefaultPage.PageSize),
+                _context.CreateOutParameter("OUT_TOTAL_ROW", DbType.Int32, 10),
+                _context.CreateOutParameter("OUT_ERR_CD", DbType.Int32, 10),
+                _context.CreateOutParameter("OUT_ERR_MSG", DbType.String, 255)
+            };
+            var result = await Task.FromResult(_context.CallToList<NhomCauHoiModel>("NhomCauHoi_GetList_Or_Search", parameters));
+            resultModel = result.Value ?? new List<NhomCauHoiModel>();
+            var rs = new NhomCauHoiReturnModel();
+            rs.err_cd = result.ErrorCode;
+            rs.err_msg = result.ErrorMessage;
+            if (result.Output["OUT_TOTAL_ROW"] + "" != "")
+                rs.TotalRecord = Convert.ToInt32(result.Output["OUT_TOTAL_ROW"]);
+            rs.Data = resultModel.ToList();
+            if (rs.TotalRecord % 10 > 0)
+            {
+                rs.pages = rs.TotalRecord / 10 + 1;
+            }
+            else
+            {
+                rs.pages = rs.TotalRecord / 10;
+            }
             return rs;
         }
         #endregion
@@ -57,10 +102,12 @@ namespace IS.Data
 
             List<IDbDataParameter> parameters = new List<IDbDataParameter>
                 {
+                
                     _context.CreateInParameter("MaNhomCauHoi", DbType.Int32, Id),
                     _context.CreateOutParameter("OUT_ERR_CD", DbType.Int32, 10),
                     _context.CreateOutParameter("OUT_ERR_MSG", DbType.String, 255)
                 };
+
             var result = await Task.FromResult(_context.CallToFirstOrDefault<NhomCauHoiModel>("NhomCauHoi_GetByID", parameters));
 
             return result.Value;

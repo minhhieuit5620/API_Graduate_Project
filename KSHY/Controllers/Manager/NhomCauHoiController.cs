@@ -18,40 +18,43 @@ namespace KSHY.Controllers.Manager
     [ApiController]
     public class NhomCauHoiController : BaseController
     {
-
-
-
         private NhomCauHoi _context;
         public NhomCauHoiController(IConfiguration configuration) : base(configuration)
         {
-
         }
         #region Lấy dữ liệu
         [HttpPost, Route("/api/Nhom/GetAllNhomCauHoi")]
         public async Task<IActionResult> GetAllNhomCauHoi([FromBody] NhomCauHoiModelParameter model)
         {
             if (!string.IsNullOrEmpty(model.Data.TenNhomCauHoi))
-            {
-                //var strToken = ISSecurity.DecryptASCII(model.Data.Key, _systemRoot.Key, true);
-                //var ArrayAuthorize = strToken.Split(";");
-                //if (ArrayAuthorize[0] == _systemRoot.Value && lstAccessSystem.Any(a => a == ArrayAuthorize[1]))
-                //{
+            {               
                     object data = null;
                     _context = new NhomCauHoi(ConnectString);
                     data = await _context.GetAllNhomCauHoi(model);
-                    return Ok(data);
-                //}
+                    return Ok(data);               
             }
             return BadRequest("UnAuthorize");
 
         }
-        #endregion
+        [HttpPost, Route("/api/Nhom/SearchNCH/{Search}")]
+        public async Task<IActionResult> SearchNhomCauHoi([FromBody] NhomCauHoiModelParameter model,string Search)
+        {
+            if (!string.IsNullOrEmpty(model.Data.TenNhomCauHoi))
+            {
+                object data = null;
+                _context = new NhomCauHoi(ConnectString);
+                data = await _context.SearchNhomCauHoi(model,Search);
+                return Ok(data);
+            }
+            return BadRequest("UnAuthorize");
+
+        }
 
         //[HttpGet, Route("/api/Nhom/GetNhomCauHoiById/'+id+'")]
         //public async Task<IActionResult> GetNhomCauHoiById(int id)
         //{
-         
-            
+
+
         //}
 
         //[HttpGet("{id}")]
@@ -69,7 +72,7 @@ namespace KSHY.Controllers.Manager
             return Ok(tblNhomCauHoi);
         }
 
-
+        #endregion
 
         #region Thêm dữ liệu
 
@@ -78,16 +81,13 @@ namespace KSHY.Controllers.Manager
         {
             if (!string.IsNullOrEmpty(model.Data.TenNhomCauHoi))
             {
-                //var strToken = ISSecurity.DecryptASCII(model.Data.Key, _systemRoot.Key, true);
-                //var ArrayAuthorize = strToken.Split(";");
-                //if (ArrayAuthorize[0] == _systemRoot.Value && lstAccessSystem.Any(a => a == ArrayAuthorize[1]))
-                //{
+             
                     object data = null;
                     var dataModel = model.Data.Cast<TblNhomCauHoi>();
                     _context = new NhomCauHoi(ConnectString);
                     data = await _context.AddOrUpdate(dataModel);
                     return Ok(data);
-               // }
+            
             }
             return BadRequest("UnAuthorize");
 

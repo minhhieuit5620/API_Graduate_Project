@@ -7,10 +7,10 @@ namespace KSHY.Models
 {
     public partial class TblLoaiCauHoi
     {
-        public TblLoaiCauHoi()
-        {
-            TblCauHois = new HashSet<TblCauHoi>();
-        }
+        //public TblLoaiCauHoi()
+        //{
+        //    TblCauHois = new HashSet<TblCauHoi>();
+        //}
 
         public int MaLoaiCauHoi { get; set; }
         public string TenLoaiCauHoi { get; set; }
@@ -21,6 +21,6 @@ namespace KSHY.Models
         public int? MaNguoiSua { get; set; }
         public int? TrangThai { get; set; }
 
-        public virtual ICollection<TblCauHoi> TblCauHois { get; set; }
+      //  public virtual ICollection<TblCauHoi> TblCauHois { get; set; }
     }
 }

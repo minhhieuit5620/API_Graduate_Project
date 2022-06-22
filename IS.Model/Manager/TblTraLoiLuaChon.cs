@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace KSHY.Models
+namespace IS.Model.Manager
 {
     public partial class TblTraLoiLuaChon
     {

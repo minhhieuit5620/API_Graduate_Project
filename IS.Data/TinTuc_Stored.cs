@@ -9,25 +9,24 @@ using System.Threading.Tasks;
 using KSHYDatabase;
 using IS.Model.Manager;
 
+
 namespace IS.Data
 {
     public class TinTuc_Stored
     {
         private readonly ISSQLContext _context;
+      
+
 
         public TinTuc_Stored(string ConnectString)
         {
             _context = new ISSQLContext(ConnectString);
+
         }
         #region Lấy dữ liệu
         public async Task<TinTucReturnModel> GetAllTinTuc(TinTucModelParameter model)
         {
-            IEnumerable<TinTucModel> resultModel;
-            //var advanceSearch = "";
-            //if (model.Data.Filter != null && model.Data.Filter.filters != null)
-            //{
-            //    advanceSearch = LinqExpressions.ConvertFilterToString<NhomCauHoiModel>(model.Data.Filter.filters);
-            //}
+            IEnumerable<TinTucModel> resultModel;          
             var search = "";
             List<IDbDataParameter> parameters = new List<IDbDataParameter>
                 {
@@ -47,6 +46,14 @@ namespace IS.Data
             if (result.Output["OUT_TOTAL_ROW"] + "" != "")
                 rs.TotalRecord = Convert.ToInt32(result.Output["OUT_TOTAL_ROW"]);
             rs.Data = resultModel.ToList();
+            if (rs.TotalRecord % 10 > 0)
+            {
+                rs.pages = rs.TotalRecord / 10 + 1;
+            }
+            else
+            {
+                rs.pages = rs.TotalRecord / 10;
+            }
             return rs;
         }
         #endregion
@@ -83,28 +90,38 @@ namespace IS.Data
             rs.Data = resultModel.ToList();
             return rs;
         }
-
-
-
-
         #region Thêm dữ liệu
+        //public async Task<int> AddOrUpdate(TblTinTuc model)
+        //{
+        //    var parameters = new List<IDbDataParameter>
+        //        {
+        //            _context.CreateInParameter("ID_CauHoi", DbType.Int32, model.MaTinTuc),
+        //            _context.CreateInParameter("NoiDung", DbType.String, model.Mota),           
+        //        };
+
+        //    var result = await Task.FromResult(_context.CallToValue("CH_CauHoi_Insert_Or_Update", parameters));
+
+        //    return result.ErrorCode == 0 && string.IsNullOrEmpty(result.ErrorMessage) ? Constant.ReturnExcuteFunction.Success : Constant.ReturnExcuteFunction.Error;
+        //}
+
+
         public async Task<int> AddOrUpdate(TblTinTuc model)
         {
             var parameters = new List<IDbDataParameter>
                 {
-                    _context.CreateInParameter("ID_CauHoi", DbType.Int32, model.MaTinTuc),
-                 _context.CreateInParameter("NoiDung", DbType.String, model.Mota),
-                 //_context.CreateInParameter("GoiYCauHoi", DbType.String, model.GoiYcauHoi),
-                 //_context.CreateInParameter("MaLoaiCauHoi", DbType.Int32, model.MaLoaiCauHoi),
-                 //_context.CreateInParameter("MaNhomCauHoi", DbType.Int32, model.MaNhomCauHoi),
-                 //    _context.CreateInParameter("TrangThai", DbType.Int32, model.TrangThai),
-                 //_context.CreateInParameter("NguoiThem", DbType.String, model.NguoiThem),
-                 //_context.CreateInParameter("NguoiSua", DbType.String, model.NguoiSua),
-                 //   _context.CreateOutParameter("OUT_ERR_CD", DbType.Int32, 10),
-                 //   _context.CreateOutParameter("OUT_ERR_MSG", DbType.String, 255)
+                    _context.CreateInParameter("MaTinTuc", DbType.Int32, model.MaTinTuc),
+                      _context.CreateInParameter("MaLoaiTin", DbType.Int32, model.MaLoaiTin),
+                 _context.CreateInParameter("TieuDe", DbType.String, model.TieuDe),
+                  _context.CreateInParameter("Mota", DbType.String, model.Mota),
+                   _context.CreateInParameter("HinhAnh", DbType.String, model.HinhAnh),                 
+                 _context.CreateInParameter("TrangThai", DbType.Int32, model.TrangThai),
+                 _context.CreateInParameter("NguoiThem", DbType.String, model.NguoiThem),
+                 _context.CreateInParameter("NguoiSua", DbType.String, model.NguoiSua),
+                    _context.CreateOutParameter("OUT_ERR_CD", DbType.Int32, 10),
+                    _context.CreateOutParameter("OUT_ERR_MSG", DbType.String, 255)
                 };
 
-            var result = await Task.FromResult(_context.CallToValue("CH_CauHoi_Insert_Or_Update", parameters));
+            var result = await Task.FromResult(_context.CallToValue("TinTuc_Insert_Or_Update", parameters));
 
             return result.ErrorCode == 0 && string.IsNullOrEmpty(result.ErrorMessage) ? Constant.ReturnExcuteFunction.Success : Constant.ReturnExcuteFunction.Error;
         }
@@ -113,16 +130,16 @@ namespace IS.Data
 
         #region Xóa dữ liệu
 
-        public async Task<int> DeleteCauHoi(int Id)
+        public async Task<int> DeleteTinTuc(int Id)
         {
             var parameters = new List<IDbDataParameter>
                 {
-                    _context.CreateInParameter("MaCauHoi", DbType.Int32,Id),
+                    _context.CreateInParameter("MaTinTuc", DbType.Int32,Id),
                     _context.CreateOutParameter("OUT_ERR_CD", DbType.Int32, 10),
                     _context.CreateOutParameter("OUT_ERR_MSG", DbType.String, 255)
                 };
 
-            var result = await Task.FromResult(_context.CallToValue("CH_CauHoi_Delete", parameters));
+            var result = await Task.FromResult(_context.CallToValue("TinTuc_Delete", parameters));
             return result.ErrorCode == 0 && string.IsNullOrEmpty(result.ErrorMessage) ? Constant.ReturnExcuteFunction.Success : Constant.ReturnExcuteFunction.Error;
         }
 

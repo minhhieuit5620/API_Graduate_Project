@@ -15,6 +15,7 @@ namespace IS.Model.Views
     {
         public List<TinTucModel> Data { get; set; }
         public int TotalRecord { get; set; }
+        public int pages { get; set; }
     }
     public class TinTucModelParameter
     {

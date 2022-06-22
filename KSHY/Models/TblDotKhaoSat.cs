@@ -7,10 +7,10 @@ namespace KSHY.Models
 {
     public partial class TblDotKhaoSat
     {
-        public TblDotKhaoSat()
-        {
-            TblKhaoSats = new HashSet<TblKhaoSat>();
-        }
+        //public TblDotKhaoSat()
+        //{
+        //    TblKhaoSats = new HashSet<TblKhaoSat>();
+        //}
 
         public int MaDotKhaoSat { get; set; }
         public string TenDotKhaoSat { get; set; }
@@ -26,6 +26,6 @@ namespace KSHY.Models
         public string FileKeHoach { get; set; }
         public int? TrangThai { get; set; }
 
-        public virtual ICollection<TblKhaoSat> TblKhaoSats { get; set; }
+       // public virtual ICollection<TblKhaoSat> TblKhaoSats { get; set; }
     }
 }

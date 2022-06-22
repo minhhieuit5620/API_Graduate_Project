@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace KSHY.Models
+namespace IS.Model.Manager
 {
     public partial class TblTaiKhoanDn
     {
@@ -17,7 +17,7 @@ namespace KSHY.Models
         public string NguoiSua { get; set; }
         public DateTime? NgaySua { get; set; }
 
-        public virtual TblPhanQuyen RolNavigation { get; set; }
-        public virtual TblDoanhNghiep TblDoanhNghiep { get; set; }
+        //public virtual TblPhanQuyen RolNavigation { get; set; }
+        //public virtual TblDoanhNghiep TblDoanhNghiep { get; set; }
     }
 }

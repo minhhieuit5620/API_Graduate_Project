@@ -1,0 +1,15 @@
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\KSHYWeb\bin\Release\net5.0\KSHYWeb.deps.json
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\KSHYWeb\bin\Release\net5.0\KSHYWeb.dll
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\KSHYWeb\bin\Release\net5.0\ref\KSHYWeb.dll
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\KSHYWeb\bin\Release\net5.0\KSHYWeb.pdb
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\KSHYWeb\bin\Release\net5.0\KSHY.Common.dll
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\KSHYWeb\bin\Release\net5.0\KSHY.Common.pdb
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\KSHYWeb\obj\Release\net5.0\KSHYWeb.csproj.AssemblyReference.cache
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\KSHYWeb\obj\Release\net5.0\KSHYWeb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\KSHYWeb\obj\Release\net5.0\KSHYWeb.AssemblyInfoInputs.cache
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\KSHYWeb\obj\Release\net5.0\KSHYWeb.AssemblyInfo.cs
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\KSHYWeb\obj\Release\net5.0\KSHYWeb.csproj.CoreCompileInputs.cache
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\KSHYWeb\obj\Release\net5.0\KSHYWeb.csproj.CopyComplete
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\KSHYWeb\obj\Release\net5.0\KSHYWeb.dll
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\KSHYWeb\obj\Release\net5.0\ref\KSHYWeb.dll
+C:\Users\MinhHieuDev\Desktop\DATN\API_Graduate_Project\KSHYWeb\obj\Release\net5.0\KSHYWeb.pdb

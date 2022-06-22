@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VgJOFhZG5LyHFLchHD7mipqcV5w1SS4CRuH8jSEEmV78ofZW0RDp8W/nVqLvH/SKnGC4jxUrJOEgtgJ8FNF4XQ==",
+  "dgSpecHash": "rnJ4dIj/Zh1mCsYN+e7fTxRgSF2ck1hKRUwOyJ10VBNfJaNITk5DLz2f8Ke/NCzekFMEzWVD5BwIiWuUIPsOWg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MinhHieuDev\\Desktop\\Project_KSKHCN\\KSHY\\KSHYWeb\\KSHYWeb.csproj",
+  "projectFilePath": "C:\\Users\\MinhHieuDev\\Desktop\\DATN\\API_Graduate_Project\\KSHYWeb\\KSHYWeb.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MinhHieuDev\\.nuget\\packages\\google.gdata.client\\2.2.0\\google.gdata.client.2.2.0.nupkg.sha512",
     "C:\\Users\\MinhHieuDev\\.nuget\\packages\\google.gdata.client.core\\1.0.2\\google.gdata.client.core.1.0.2.nupkg.sha512",

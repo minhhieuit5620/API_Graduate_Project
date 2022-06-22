@@ -30,11 +30,7 @@ namespace KSHY.Controllers.Manager
         public async Task<IActionResult> GetAllCauHoi([FromBody] CauHoiModelParameter model)
         {
             if (!string.IsNullOrEmpty(model.Data.NoiDung))
-            {
-                //var strToken = ISSecurity.DecryptASCII(model.Data.Key, _systemRoot.Key, true);
-                //var ArrayAuthorize = strToken.Split(";");
-                //if (ArrayAuthorize[0] == _systemRoot.Value && lstAccessSystem.Any(a => a == ArrayAuthorize[1]))
-                //{
+            {            
                 object data = null;
                 _context = new CauHoi(ConnectString);
                 data = await _context.GetAllCauHoi(model);
@@ -42,9 +38,37 @@ namespace KSHY.Controllers.Manager
                 //}
             }
             return BadRequest("UnAuthorize");
+        }
+
+        [HttpPost, Route("/api/CauHoi/GetCauHoiKS")]
+        public async Task<IActionResult> GetCauHoiKS([FromBody] CauHoiModelParameter model)
+        {
+            if (!string.IsNullOrEmpty(model.Data.NoiDung))
+            {
+                object data = null;
+                _context = new CauHoi(ConnectString);
+                data = await _context.GetCauHoiKhaoSat(model);
+                return Ok(data);
+                //}
+            }
+            return BadRequest("UnAuthorize");
 
         }
-   
+
+        [HttpPost, Route("/api/CauHoi/SearchCauHoi/{Search}")]
+        public async Task<IActionResult> SearchCauHoi([FromBody] CauHoiModelParameter model, string Search)
+        {
+            if (!string.IsNullOrEmpty(model.Data.NoiDung))
+            {
+                object data = null;
+                _context = new CauHoi(ConnectString);
+                data = await _context.SearchCauHoi(model,Search);
+                return Ok(data);              
+            }
+            return BadRequest("UnAuthorize");
+
+        }
+
 
         [HttpGet, Route("/api/CauHoi/GetCauHoiById/{id}")]
         public async Task<ActionResult<CauHoiModelParameter>> GetTblCauHoi(int id)
@@ -80,25 +104,26 @@ namespace KSHY.Controllers.Manager
 
         #region Thêm dữ liệu
 
-        [HttpPost, Route("/api/CauHoi/Add_Or_Update")]
-        public async Task<IActionResult> Add_Or_Update([FromBody] CauHoiModelParameter model)
-        {
-            if (!string.IsNullOrEmpty(model.Data.NoiDung))
-            {
-                //var strToken = ISSecurity.DecryptASCII(model.Data.Key, _systemRoot.Key, true);
-                //var ArrayAuthorize = strToken.Split(";");
-                //if (ArrayAuthorize[0] == _systemRoot.Value && lstAccessSystem.Any(a => a == ArrayAuthorize[1]))
-                //{
-                object data = null;
-                var dataModel = model.Data.Cast<TblCauHoi>();
-                _context = new CauHoi(ConnectString);
-                data = await _context.AddOrUpdate(dataModel);
-                return Ok(data);
-                // }
-            }
-            return BadRequest("UnAuthorize");
+        //[HttpPost, Route("/api/CauHoi/Add_Or_Update")]
+        //public async Task<IActionResult> Add_Or_Update([FromBody] CauHoiModelParameter model, List<LuaChonModel> luachon)
+        //{
+        //    if (!string.IsNullOrEmpty(model.Data.NoiDung))
+        //    {
+        //        //var strToken = ISSecurity.DecryptASCII(model.Data.Key, _systemRoot.Key, true);
+        //        //var ArrayAuthorize = strToken.Split(";");
+        //        //if (ArrayAuthorize[0] == _systemRoot.Value && lstAccessSystem.Any(a => a == ArrayAuthorize[1]))
+        //        //{
+        //        object data = null;
+        //        var dataModel = model.Data.Cast<TblCauHoi>();
+        //        var dataModelLC = luachon.Cast<TblLuaChon>().ToList();
+        //        _context = new CauHoi(ConnectString);
+        //        data = await _context.AddOrUpdate(dataModel, dataModelLC);
+        //        return Ok(data);
+        //        // }
+        //    }
+        //    return BadRequest("UnAuthorize");
 
-        }
+        //}
         #endregion
 
 
